@@ -1,0 +1,22 @@
+{
+  "name": "mmc/ceselector",
+  "type": "typo3-cms-extension",
+  "description": "Selects and displays content elements according to certain parameters (Max elements, sorting, persistent mode)",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": "^10.4 || ^11.5"
+  },
+  "replace": {
+    "typo3-ter/ceselector": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "ceselector"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "MMC\\Ceselector\\": "Classes/"
+    }
+  }
+}

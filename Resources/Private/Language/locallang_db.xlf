@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-07-08T00:00:00Z" product-name="ceselector">
+		<header/>
+		<body>
+			<trans-unit id="plugin_name">
+				<source>MMC content element selector</source>
+			</trans-unit>
+			<trans-unit id="plugin_description">
+				<source>Selects and shows content elements from a set by certain rules.</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_max_el">
+			  <source>Max elements to show</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_orderby.I.0">
+			  <source>Random</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_orderby.I.1">
+			  <source>Sorting ascending</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_orderby.I.2">
+			  <source>Sorting descending</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_orderby.I.3">
+			  <source>Header-text ascending</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_orderby.I.4">
+			  <source>Header-text descending</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_orderby">
+			  <source>Order selection by</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_persistent_mode.I.0">
+			  <source>Disabled</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_persistent_mode.I.1">
+			  <source>Static</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_persistent_mode.I.2">
+			  <source>Rotate</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_persistent_mode">
+			  <source>Persistent Mode</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_ceselector_cookie_exp">
+			  <source>Persistent selection expire (sec.)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

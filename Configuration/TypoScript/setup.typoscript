@@ -1,0 +1,32 @@
+plugin.tx_ceselector {
+	view {
+		templateRootPaths.10 = {$plugin.tx_ceselector.view.templateRootPath}
+		partialRootPaths.10 = {$plugin.tx_ceselector.view.partialRootPath}
+		layoutRootPaths.10 = {$plugin.tx_ceselector.view.layoutRootPath}
+	}
+}
+
+# model mapping
+config.tx_extbase.persistence.classes {
+	MMC\Ceselector\Domain\Model\Content {
+		mapping{
+			tableName = tt_content
+		}
+	}
+}
+
+# content element rendering
+lib.tx_ceselector.contentElementRendering = RECORDS
+lib.tx_ceselector.contentElementRendering {
+	tables = tt_content
+	source.current = 1
+	dontCheckPid = 1
+}
+
+# remove content element container for the plugin
+tt_content.stdWrap.innerWrap.if {
+	value = list ceselector_pi1
+	equals.dataWrap = {field:CType} {field:list_type}
+	negate = 1
+}
+tt_content.stdWrap.prefixComment.if < tt_content.stdWrap.innerWrap.if
